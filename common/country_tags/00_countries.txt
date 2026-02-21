@@ -1,0 +1,4 @@
+ABE = "countries/ABE - Alaska Brotherhood Expedition.txt"
+X69 = "countries/X69 - 69ners Raiders.txt"
+HNT = "countries/HNT - Huntsmen.txt"
+RCG = "countries/RCG - Royal Canadian Mounted Ghouls.txt"

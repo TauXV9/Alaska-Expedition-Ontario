@@ -1,0 +1,51 @@
+state = {
+	id = 720
+	name = "STATE_720"
+	
+	resources = {
+		scrap_metal = 30
+		advanced_components = 18
+		energy = 18
+		water = 6
+		circuitry = 4
+	}
+	
+	history = {
+		owner = RCG
+		add_core_of = RCG
+		
+		victory_points = {
+			20059 20 
+		}
+		victory_points = {
+			16555 50 
+		}
+		victory_points = {
+			19151 25 
+		}
+		victory_points = {
+			15894 25 
+		}
+		victory_points = {
+			16582 30 
+		}
+		victory_points = {
+			20150 15 
+		}
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			power_plant = 2
+		}
+	}
+	 
+	provinces={
+		1418 15276 15283 15286 15717 15776 15821 15857 15894 15945 15962 15992 16555 16559 16582 16585 16586 16594 16595 16628 16686 16693 16739 16807 16811 16818 16822 16824 16870 16878 16881 16900 16937 16957 19124 19126 19129 19130 19136 19137 19138 19142 19145 19146 19150 19151 19154 19168 19169 19170 19221 19222 19233 19315 19322 19323 19409 19410 19427 19572 19981 20037 20059 20061 20141 20150 20153 20161 20167 20180
+	}
+	
+	manpower = 5000
+	state_category = large_town
+	
+}

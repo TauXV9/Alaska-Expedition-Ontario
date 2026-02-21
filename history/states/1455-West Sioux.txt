@@ -1,0 +1,35 @@
+state = {
+	id = 1455
+	name = "STATE_1455"
+	
+	resources = {
+		scrap_metal = 18
+		advanced_components = 12
+		energy = 6
+		water = 3
+	}
+	
+	history = {
+		owner = HNT
+		add_core_of = HNT
+		
+		victory_points = {
+			16631 25 
+		}
+		victory_points = {
+			21367 10 
+		}
+		
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 2
+			arms_factory = 1
+		}
+	}
+	provinces={ 
+		8606 8624 16544 16629 16631 21137 21278 21367 21530
+	}
+	manpower = 2500
+	state_category = medium_town
+	
+}

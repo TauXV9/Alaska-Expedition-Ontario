@@ -1,0 +1,63 @@
+focus_tree = {
+	id = x69_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = X69
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 2150 y = 1000 }
+	
+	focus = {
+		id = x69_raider_roots
+		icon = GFX_goal_generic_raid
+		cost = 7
+		x = 0
+		y = 0
+		
+		completion_reward = {
+			add_manpower = 200
+		}
+	}
+	
+	focus = {
+		id = x69_strengthen_grip
+		icon = GFX_goal_generic_raid
+		cost = 7
+		prerequisite = { focus = x69_raider_roots }
+		x = 0
+		y = 1
+		
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	
+	focus = {
+		id = x69_expand_territory
+		icon = GFX_goal_generic_raid
+		cost = 7
+		prerequisite = { focus = x69_strengthen_grip }
+		x = 0
+		y = 2
+		
+		completion_reward = {
+			army_experience = 10
+		}
+	}
+	
+	focus = {
+		id = x69_claim_supremacy
+		icon = GFX_goal_generic_raid
+		cost = 7
+		prerequisite = { focus = x69_expand_territory }
+		x = 0
+		y = 3
+		
+		completion_reward = {
+			add_ideas = x69_raider_dominance
+		}
+	}
+}

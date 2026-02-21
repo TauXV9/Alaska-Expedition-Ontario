@@ -1,0 +1,107 @@
+add_namespace = abe_events
+
+country_event = {
+	id = abe_events.1
+	title = abe_events.1.t
+	desc = abe_events.1.d
+	picture = GFX_event_generic_bunker
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = abe_events.1.a
+		
+		custom_effect_tooltip = ABE_arrived_ontario_tt
+	}
+}
+
+country_event = {
+	id = abe_events.2
+	title = abe_events.2.t
+	desc = abe_events.2.d
+	picture = GFX_event_generic_bunker
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = abe_events.2.a
+		trigger = {
+			has_country_flag = choose_classic_path
+		}
+		set_country_flag = abe_classic_path
+		load_focus_tree = abe_focus
+	}
+	
+	option = {
+		name = abe_events.2.b
+		trigger = {
+			has_country_flag = choose_military_path
+		}
+		set_country_flag = abe_military_path
+		load_focus_tree = abe_focus
+	}
+	
+	option = {
+		name = abe_events.2.c
+		trigger = {
+			has_country_flag = choose_canadian_path
+		}
+		set_country_flag = abe_canadian_path
+		load_focus_tree = abe_focus
+	}
+}
+
+country_event = {
+	id = abe_events.3
+	title = abe_events.3.t
+	desc = abe_events.3.d
+	picture = GFX_event_generic_bunker
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = abe_events.3.a
+		
+		ai_chance = {
+			base = 33
+		}
+		set_country_flag = choose_classic_path
+	}
+	
+	option = {
+		name = abe_events.3.b
+		
+		ai_chance = {
+			base = 33
+		}
+		set_country_flag = choose_military_path
+	}
+	
+	option = {
+		name = abe_events.3.c
+		
+		ai_chance = {
+			base = 33
+		}
+		set_country_flag = choose_canadian_path
+	}
+}
+
+country_event = {
+	id = abe_events.10
+	title = abe_events.10.t
+	desc = abe_events.10.d
+	picture = GFX_event_generic_bunker
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = abe_events.10.a
+		trigger = {
+			NOT = { has_country_flag = ABE_conflict_started }
+		}
+		set_country_flag = ABE_conflict_started
+		
+		custom_effect_tooltip = ABE_ontario_conflict_tt
+	}
+}

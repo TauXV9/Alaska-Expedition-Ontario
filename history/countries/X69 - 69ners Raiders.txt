@@ -1,0 +1,34 @@
+capital = 1166
+
+set_province_capital = 8876
+
+set_technology = {
+	basic_supply_transport_tech = 1
+	infantry_tech_level_tribal = 1
+	infantry_tech_level_raider = 1
+	support_tech_level_tribal = 1
+	support_tech_level_raider = 1
+	vehicles_tech_level_tribal = 1
+	vehicles_tech_level_raider = 1
+	power_armour_tech_level_tribal = 1
+	tools_tech_level_tribal = 1
+	habitation_tech_level_tribal = 1
+	exploitation_tech_level_tribal = 1
+	standard_weaponry_tech = 1
+	melee_weaponry_tech_1 = 1
+	ballistic_weaponry_tech_1 = 1
+}
+
+set_stability = 0.3
+set_war_support = 0.6
+set_research_slots = 1
+
+set_politics = {
+	ruling_party = raider
+	elections_allowed = no
+}
+
+set_rule = { can_send_volunteers = no }
+
+set_country_flag = is_raider_nation
+set_country_flag = manpower_laws_hidden

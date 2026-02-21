@@ -1,0 +1,149 @@
+﻿l_english:
+
+### Country Names ###
+ABE:0 "Alaska Brotherhood Expedition"
+ABE_DEF:0 "the Alaska Brotherhood Expedition"
+X69:0 "69ners Raiders"
+X69_DEF:0 "the 69ners Raiders"
+HNT:0 "Huntsmen"
+HNT_DEF:0 "the Huntsmen"
+RCG:0 "Royal Canadian Mounted Ghouls"
+RCG_DEF:0 "the Royal Canadian Mounted Ghouls"
+
+### Focus Tree ###
+abe_focus:0 "Alaska Brotherhood Expedition Focus Tree"
+
+### ABE Focuses ###
+abe_arrive_ontario:0 "Arrive in Ontario"
+abe_arrive_ontario_desc:0 "Our expedition has reached the wastelands of Ontario. We must establish a foothold."
+
+abe_establish_forward_base:0 "Establish Forward Base"
+abe_establish_forward_base_desc:0 "Set up a temporary base of operations while we assess the situation."
+
+abe_secure_north_bay:0 "Secure CFB North Bay"
+abe_secure_north_bay_desc:0 "CFB North Bay was a major pre-war military installation. Securing it is our primary objective."
+
+abe_path_decision:0 "Choose Our Path"
+abe_path_decision_desc:0 "The expedition must decide how to proceed in this new land."
+
+abe_classic_path:0 "Follow the Brotherhood Way"
+abe_classic_path_desc:0 "We shall maintain our traditions and focus on technology preservation."
+
+abe_military_path:0 "Embrace Military Expansion"
+abe_military_path_desc:0 "Strength through conquest. We will take what we need by force."
+
+abe_canadian_path:0 "Reform as Canadian Military"
+abe_canadian_path_desc:0 "We shall abandon our isolation and reform as a new Canadian military force."
+
+abe_bunker_construction:0 "Bunker Network"
+abe_bunker_construction_desc:0 "Build defensive fortifications across our territory."
+
+abe_tech_priorities:0 "Technology Priorities"
+abe_tech_priorities_desc:0 "Focus on acquiring advanced pre-war technology."
+
+abe_outpost_expansion:0 "Outpost Expansion"
+abe_outpost_expansion_desc:0 "Expand our presence throughout the region."
+
+abe_ontario_chapter_foundation:0 "Found the Ontario Chapter"
+abe_ontario_chapter_foundation_desc:0 "Establish the Ontario Chapter as a permanent Brotherhood presence."
+
+abe_martial_law:0 "Enforce Martial Law"
+abe_martial_law_desc:0 "Implement strict military control over our territory."
+
+abe_wastelander_conscription:0 "Wastelander Conscription"
+abe_wastelander_conscription_desc:0 "Recruit wastelanders into our military forces."
+
+abe_military_expansion:0 "Military Expansion"
+abe_military_expansion_desc:0 "Grow our army to dominate the region."
+
+abe_east_canada_chapter:0 "Form East Canada Chapter"
+abe_east_canada_chapter_desc:0 "Create the East Canada Chapter as a military power."
+
+abe_military_reorganization:0 "Military Reorganization"
+abe_military_reorganization_desc:0 "Transform the Brotherhood into a more conventional military force."
+
+abe_reform_upper_canada:0 "Reform as Upper Canada"
+abe_reform_upper_canada_desc:0 "Abandon the Brotherhood and reform as Upper Canada."
+
+### National Ideas ###
+ABE_expedition_established:0 "Expedition Established"
+ABE_expedition_established_desc:0 "Our expedition has arrived in Ontario."
+
+ABE_north_bay_secured:0 "North Bay Secured"
+ABE_north_bay_secured_desc:0 "CFB North Bay is now under our control."
+
+ABE_bunker_network:0 "Bunker Network"
+ABE_bunker_network_desc:0 "Our territory is well fortified."
+
+ABE_martial_law:0 "Martial Law"
+ABE_martial_law_desc:0 "Military rule is in effect."
+
+ABE_military_expansion_idea:0 "Military Expansion"
+ABE_military_expansion_idea_desc:0 "Our army is growing stronger."
+
+ABE_canadian_military_ideas:0 "Canadian Military Heritage"
+ABE_canadian_military_ideas_desc:0 "We embrace our new Canadian identity."
+
+### X69 Focuses ###
+x69_raider_roots:0 "Raider Roots"
+x69_strengthen_grip:0 "Strengthen Grip"
+x69_expand_territory:0 "Expand Territory"
+x69_claim_supremacy:0 "Claim Supremacy"
+
+### X69 Ideas ###
+x69_raider_dominance:0 "Raider Dominance"
+x69_raider_dominance_desc:0 "We rule these lands."
+
+### HNT Focuses ###
+hnt_settlement_roots:0 "Settlement Roots"
+hnt_fortify_settlement:0 "Fortify Settlement"
+hnt_develop_trade:0 "Develop Trade"
+hnt_hunt_alls:0 "Master Hunters"
+hnt_expand_influence:0 "Expand Influence"
+
+### HNT Ideas ###
+hnt_trade_network:0 "Trade Network"
+hnt_trade_network_desc:0 "We have established trade routes."
+
+hnt_master_hunters:0 "Master Hunters"
+hnt_master_hunters_desc:0 "Our hunters are legendary."
+
+### RCG Focuses ###
+rcg_ghoul_unity:0 "Ghoul Unity"
+rcg_mounted_legacy:0 "Mounted Legacy"
+rcg_royal_guard:0 "Royal Guard"
+rcg_claim_upper_canada:0 "Claim Upper Canada"
+rcg_reclaim_territory:0 "Reclaim Territory"
+rcg_final_stand:0 "Final Stand"
+
+### RCG Ideas ###
+rcg_mounted_legacy_idea:0 "Mounted Legacy"
+rcg_mounted_legacy_idea_desc:0 "We continue the tradition of the RCMP."
+
+rcg_royal_claim:0 "Royal Claim"
+rcg_royal_claim_desc:0 "We claim these lands in the name of Canada."
+
+### Events ###
+abe_events.1.t:0 "Arrival in Ontario"
+abe_events.1.d:0 "After a long march from Alaska, the expedition has finally reached Ontario. The wasteland stretches before us, filled with danger and opportunity."
+abe_events.1.a:0 "We have arrived."
+
+abe_events.2.t:0 "Path Decision"
+abe_events.2.d:0 "We must decide how to proceed. Our options are clear: maintain our Brotherhood traditions, embrace military conquest, or reform into something new."
+abe_events.2.a:0 "We follow the Brotherhood way."
+abe_events.2.b:0 "Conquest is the only option."
+abe_events.2.c:0 "We shall become Canadian."
+
+abe_events.3.t:0 "Choose Our Future"
+abe_events.3.d:0 "The time has come to decide our path. What kind of faction shall we become?"
+abe_events.3.a:0 "Classic Brotherhood"
+abe_events.3.b:0 "Military Expansion"
+abe_events.3.c:0 "Canadian Military"
+
+abe_events.10.t:0 "Ontario Power Vacuum"
+abe_events.10.d:0 "Other factions have noticed our arrival. The 69ners Raiders, Huntsmen, and Royal Canadian Mounted Ghouls all stake their claims on Ontario. Conflict is inevitable."
+abe_events.10.a:0 "Let them come."
+
+### Tooltips ###
+ABE_arrived_ontario_tt:0 "The expedition has arrived in Ontario."
+ABE_ontario_conflict_tt:0 "The Ontario power vacuum has begun. All factions are now hostile to each other."

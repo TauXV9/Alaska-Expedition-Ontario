@@ -1,0 +1,131 @@
+ideas = {
+	country = {
+		# ABE Ideas
+		ABE_expedition_established = {
+			allowed = {
+				original_tag = ABE
+			}
+			
+			modifier = {
+				political_power_gain = 0.15
+				conscription = 0.02
+			}
+		}
+		
+		ABE_north_bay_secured = {
+			allowed = {
+				original_tag = ABE
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				army_defence_factor = 0.1
+			}
+		}
+		
+		abe_bunker_network = {
+			allowed = {
+				original_tag = ABE
+			}
+			
+			modifier = {
+				army_defence_factor = 0.15
+				army_core_defence_factor = 1.0
+			}
+		}
+		
+		abe_martial_law = {
+			allowed = {
+				original_tag = ABE
+			}
+			
+			modifier = {
+				army_attack_factor = 0.1
+				political_power_cost = -0.15
+				stability_factor = -0.1
+			}
+		}
+		
+		abe_military_expansion_idea = {
+			allowed = {
+				original_tag = ABE
+			}
+			
+			modifier = {
+				conscription = 0.03
+				army_speed_factor = 0.1
+			}
+		}
+		
+		abe_canadian_military_ideas = {
+			allowed = {
+				original_tag = ABE
+			}
+			
+			modifier = {
+				conscription = 0.02
+				army_defence_factor = 0.1
+				land_reinforce_rate = 0.05
+			}
+		}
+		
+		# X69 Ideas
+		x69_raider_dominance = {
+			allowed = {
+				original_tag = X69
+			}
+			
+			modifier = {
+				army_attack_factor = 0.15
+				equipment_capture_factor = 0.25
+			}
+		}
+		
+		# HNT Ideas
+		hnt_master_hunters = {
+			allowed = {
+				original_tag = HNT
+			}
+			
+			modifier = {
+				army_defence_factor = 0.1
+				recon_factor = 0.2
+				terrain_penalty_reduction = 0.1
+			}
+		}
+		
+		hnt_trade_network = {
+			allowed = {
+				original_tag = HNT
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		
+		# RCG Ideas
+		rcg_mounted_legacy_idea = {
+			allowed = {
+				original_tag = RCG
+			}
+			
+			modifier = {
+				army_speed_factor = 0.15
+				recon_factor = 0.2
+			}
+		}
+		
+		rcg_royal_claim = {
+			allowed = {
+				original_tag = RCG
+			}
+			
+			modifier = {
+				political_power_gain = 0.1
+				annex_cost_factor = -0.25
+			}
+		}
+	}
+}

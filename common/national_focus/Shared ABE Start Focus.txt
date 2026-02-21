@@ -1,0 +1,23 @@
+focus_tree = {
+	id = abe_shared_nf
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = ABE
+		}
+	}
+	default = no
+	
+	focus = {
+		id = ABE_shared_brotherhood_start
+		icon = GFX_goal_BOS_generic
+		cost = 7
+		x = 0
+		y = 0
+		
+		completion_reward = {
+			country_event = { id = abe_events.1 }
+		}
+	}
+}

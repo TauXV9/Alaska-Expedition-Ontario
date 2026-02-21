@@ -1,0 +1,334 @@
+focus_tree = {
+	id = abe_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = ABE
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 2150 y = 1000 }
+	
+	shared_focus = ABE_shared_brotherhood_start
+	
+	focus = {
+		id = abe_arrive_ontario
+		icon = GFX_goal_BOS_generic
+		cost = 7
+		x = 0
+		y = 1
+		
+		completion_reward = {
+			add_ideas = ABE_expedition_established
+		}
+	}
+	
+	focus = {
+		id = abe_establish_forward_base
+		icon = GFX_goal_generic_construct_military
+		cost = 7
+		prerequisite = { focus = abe_arrive_ontario }
+		x = 0
+		y = 2
+		
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = abe_secure_north_bay
+		icon = GFX_goal_BOS_steel_cage
+		cost = 10
+		prerequisite = { focus = abe_establish_forward_base }
+		x = 0
+		y = 3
+		
+		available = {
+			owns_state = 1147
+		}
+		
+		completion_reward = {
+			add_ideas = ABE_north_bay_secured
+			1147 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = abe_path_decision
+		icon = GFX_goal_generic_nuclear
+		cost = 5
+		prerequisite = { focus = abe_secure_north_bay }
+		x = 0
+		y = 4
+		
+		bypass = {
+			has_country_flag = abe_path_chosen
+		}
+		
+		completion_reward = {
+			set_country_flag = abe_path_chosen
+		}
+		
+		allow_branch = {
+			always = no
+		}
+	}
+	
+	focus = {
+		id = abe_classic_path
+		icon = GFX_goal_BOS_generic
+		cost = 7
+		prerequisite = { focus = abe_path_decision }
+		x = -3
+		y = 5
+		
+		available = {
+			NOT = { has_country_flag = abe_military_path }
+			NOT = { has_country_flag = abe_canadian_path }
+		}
+		
+		allow_branch = {
+			OR = {
+				has_country_flag = choose_classic_path
+				NOT = { has_country_flag = abe_path_chosen }
+			}
+		}
+		
+		completion_reward = {
+			set_country_flag = abe_classic_path
+			set_country_flag = abe_path_chosen
+			set_country_flag = choose_classic_path
+		}
+	}
+	
+	focus = {
+		id = abe_military_path
+		icon = GFX_goal_generic_special_forces
+		cost = 7
+		prerequisite = { focus = abe_path_decision }
+		x = 0
+		y = 5
+		
+		available = {
+			NOT = { has_country_flag = abe_classic_path }
+			NOT = { has_country_flag = abe_canadian_path }
+		}
+		
+		allow_branch = {
+			OR = {
+				has_country_flag = choose_military_path
+				NOT = { has_country_flag = abe_path_chosen }
+			}
+		}
+		
+		completion_reward = {
+			set_country_flag = abe_military_path
+			set_country_flag = abe_path_chosen
+			set_country_flag = choose_military_path
+		}
+	}
+	
+	focus = {
+		id = abe_canadian_path
+		icon = GFX_goal_generic_defence
+		cost = 7
+		prerequisite = { focus = abe_path_decision }
+		x = 3
+		y = 5
+		
+		available = {
+			NOT = { has_country_flag = abe_classic_path }
+			NOT = { has_country_flag = abe_military_path }
+		}
+		
+		allow_branch = {
+			OR = {
+				has_country_flag = choose_canadian_path
+				NOT = { has_country_flag = abe_path_chosen }
+			}
+		}
+		
+		completion_reward = {
+			set_country_flag = abe_canadian_path
+			set_country_flag = abe_path_chosen
+			set_country_flag = choose_canadian_path
+		}
+	}
+	
+	focus = {
+		id = abe_bunker_construction
+		icon = GFX_goal_generic_construct_civilian
+		cost = 7
+		prerequisite = { focus = abe_classic_path }
+		x = -3
+		y = 6
+		
+		completion_reward = {
+			add_ideas = abe_bunker_network
+		}
+	}
+	
+	focus = {
+		id = abe_tech_priorities
+		icon = GFX_goal_generic_research
+		cost = 7
+		prerequisite = { focus = abe_bunker_construction }
+		x = -3
+		y = 7
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = electronics_tech_category
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = robotics_tech_category
+			}
+		}
+	}
+	
+	focus = {
+		id = abe_outpost_expansion
+		icon = GFX_goal_BOS_scourge_focus
+		cost = 7
+		prerequisite = { focus = abe_tech_priorities }
+		x = -3
+		y = 8
+		
+		completion_reward = {
+			army_experience = 25
+			every_owned_state = {
+				limit = { is_owned_by = ROOT }
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = abe_ontario_chapter_foundation
+		icon = GFX_goal_BOS_generic
+		cost = 14
+		prerequisite = { focus = abe_outpost_expansion }
+		x = -3
+		y = 9
+		
+		available = {
+			num_of_controlled_states > 4
+		}
+		
+		completion_reward = {
+			set_country_flag = abe_formed_ontario_chapter
+			set_cosmetic_tag = ONC
+			load_focus_tree = ontario_chapter_focus
+		}
+	}
+	
+	focus = {
+		id = abe_martial_law
+		icon = GFX_goal_generic_military_spending
+		cost = 7
+		prerequisite = { focus = abe_military_path }
+		x = 0
+		y = 6
+		
+		completion_reward = {
+			add_ideas = abe_martial_law
+		}
+	}
+	
+	focus = {
+		id = abe_wastelander_conscription
+		icon = GFX_goal_generic_allied_inf
+		cost = 7
+		prerequisite = { focus = abe_martial_law }
+		x = 0
+		y = 7
+		
+		completion_reward = {
+			add_manpower = 500
+			army_experience = 15
+		}
+	}
+	
+	focus = {
+		id = abe_military_expansion
+		icon = GFX_goal_generic_army_doctrines
+		cost = 7
+		prerequisite = { focus = abe_wastelander_conscription }
+		x = 0
+		y = 8
+		
+		completion_reward = {
+			add_ideas = abe_military_expansion_idea
+		}
+	}
+	
+	focus = {
+		id = abe_east_canada_chapter
+		icon = GFX_goal_BOS_steel_cage
+		cost = 14
+		prerequisite = { focus = abe_military_expansion }
+		x = 0
+		y = 9
+		
+		available = {
+			num_of_controlled_states > 4
+		}
+		
+		completion_reward = {
+			set_country_flag = abe_formed_east_canada_chapter
+			set_cosmetic_tag = ECC
+			load_focus_tree = east_canada_chapter_focus
+		}
+	}
+	
+	focus = {
+		id = abe_military_reorganization
+		icon = GFX_goal_generic_nationalism
+		cost = 7
+		prerequisite = { focus = abe_canadian_path }
+		x = 3
+		y = 6
+		
+		completion_reward = {
+			add_ideas = abe_canadian_military_ideas
+		}
+	}
+	
+	focus = {
+		id = abe_reform_upper_canada
+		icon = GFX_goal_generic_propaganda
+		cost = 7
+		prerequisite = { focus = abe_military_reorganization }
+		x = 3
+		y = 7
+		
+		completion_reward = {
+			set_country_flag = abe_reformed_upper_canada
+			set_cosmetic_tag = UPC
+			load_focus_tree = upper_canada_focus
+		}
+	}
+}

@@ -1,0 +1,93 @@
+focus_tree = {
+	id = rcg_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = RCG
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 2150 y = 1000 }
+	
+	focus = {
+		id = rcg_ghoul_unity
+		icon = GFX_goal_generic_ghouls_focus
+		cost = 7
+		x = 0
+		y = 0
+		
+		completion_reward = {
+			add_manpower = 400
+		}
+	}
+	
+	focus = {
+		id = rcg_mounted_legacy
+		icon = GFX_goal_generic_cavalry
+		cost = 7
+		prerequisite = { focus = rcg_ghoul_unity }
+		x = 0
+		y = 1
+		
+		completion_reward = {
+			add_ideas = rcg_mounted_legacy_idea
+		}
+	}
+	
+	focus = {
+		id = rcg_royal_guard
+		icon = GFX_goal_generic_army_doctrines
+		cost = 7
+		prerequisite = { focus = rcg_mounted_legacy }
+		x = 0
+		y = 2
+		
+		completion_reward = {
+			army_experience = 20
+		}
+	}
+	
+	focus = {
+		id = rcg_claim_upper_canada
+		icon = GFX_goal_generic_nationalism
+		cost = 7
+		prerequisite = { focus = rcg_royal_guard }
+		x = 0
+		y = 3
+		
+		completion_reward = {
+			add_ideas = rcg_royal_claim
+		}
+	}
+	
+	focus = {
+		id = rcg_reclaim_territory
+		icon = GFX_goal_generic_nuclear
+		cost = 7
+		prerequisite = { focus = rcg_claim_upper_canada }
+		x = 0
+		y = 4
+		
+		completion_reward = {
+			add_war_support = 0.15
+		}
+	}
+	
+	focus = {
+		id = rcg_final_stand
+		icon = GFX_goal_generic_defence
+		cost = 14
+		prerequisite = { focus = rcg_reclaim_territory }
+		x = 0
+		y = 5
+		
+		available = {
+			num_of_states > 3
+		}
+		
+		completion_reward = {
+			set_country_flag = rcg_final_boss_ready
+		}
+	}
+}

@@ -1,0 +1,41 @@
+state = {
+	id = 1147
+	name = "STATE_1147"
+	
+	resources = {
+		scrap_metal = 12
+		advanced_components = 6
+		Composites = 6
+		Water = 6
+		Energy = 3
+	}
+	
+	history = {
+		owner = ABE
+		add_core_of = ABE
+		
+		victory_points = {
+			8704 30 
+		}
+		victory_points = {
+			21150 10 
+		}
+		victory_points = {
+			6297 15 
+		}
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+		}
+	}
+	
+	provinces = {
+		8704 21150 6297
+	}
+	
+	manpower = 1500
+	state_category = large_town
+	
+}
